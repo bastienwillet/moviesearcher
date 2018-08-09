@@ -1,0 +1,14 @@
+</br>
+<h5>Résultats pour <%= @movie %></h5>
+</br>
+<% if @movies == [] %>
+    <p>Pas de résultat :( </p>
+<% else  %>
+    <% @movies.each do |movie| %>
+        <p><span style="font-weight:bold"><%= movie.title %></span>, sorti le <%= movie.release %> et réalisé par <%= movie.director %></p>
+        <div class="create-option-thumb-img">
+            <img src="https://image.tmdb.org/t/p/w1280<%= movie.poster_URL %>" alt="Pas d'affiche disponible" width=300px/>
+        </div>
+        </br></br>
+    <% end %>
+<% end %>

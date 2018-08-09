@@ -1,0 +1,9 @@
+</br>
+<h5>Saisis le nom d'un film</h5>
+</br>
+<div class="formy">
+	<%= form_for(:movie, url: search_path) do |f| %>
+    	<%= f.text_field :movie_name, class:"form-control", placeholder:"Nom du film" %></br>
+		<%= f.submit "Go", class:"btn btn-sm btn-primary" %>
+	<% end %>
+</div>
