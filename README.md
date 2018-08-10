@@ -1,24 +1,24 @@
-# README
+## Créateurs
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Marion Velard, Bastien Willet
 
-Things you may want to cover:
+## Synopsis
 
-* Ruby version
+On en a bavé mais putain il est là, le nouveau allociné ! Et sans pubs !
 
-* System dependencies
+## Comment accéder au programme sur Heroku ?
 
-* Configuration
+Lien -> [Movie Searcher](https://moviesearcherlol.herokuapp.com/)<br />
 
-* Database creation
+## Comment accéder au programme en local ?
 
-* Database initialization
+1. Se positionner sur le dossier avec le terminal
+2. Lancer $ bundle install
+3. Lancer $ rails db:migrate
+4. Lancer $ rails server
+5. Ajouter un ficher .env à la racine qui contient une TMDB_KEY="-------" (je te file la mienne sur le slack si t'es gentil)
+6. Se rendre sur localhost:3000 avec un navigateur
 
-* How to run the test suite
+## Gems ruby utilisées
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+voir Gemfile
